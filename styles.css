@@ -219,7 +219,7 @@ section {
 }
 
 .about .content .col-right .paragraph-text {
-    font-size: 1em;
+    font-size: 1.3em;
     color: var(--primary-color);
 }
 
@@ -243,6 +243,10 @@ section {
 
 .skills .content .col-left .content-title {
     margin-bottom: 20px;
+}
+
+.skills .content .col-left .paragraph-text {
+    font-size: 1.3em;
 }
 
 .skills .content .col-right {
