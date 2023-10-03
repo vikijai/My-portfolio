@@ -204,11 +204,10 @@ section {
 .about .content .col-left .img-card img {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    left: 90px;
+    height: 75%;
     object-fit: contain;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
 .about .content .col-right .content-title {
