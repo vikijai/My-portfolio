@@ -311,10 +311,12 @@ section {
     width: 70%;
     background: #6d7eb8;
 }
+
 .skills .content .col-right .bar .sql:before {
     width: 75%;
     background: #FFFF00.;
 }
+
 .work {
     background: var(--secondary-color);
 }
