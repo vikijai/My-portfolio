@@ -560,6 +560,11 @@ section {
     .about .content {
         flex-direction: column;
     }
+    .about .content .col-left .img-card img {
+        position: absolute;
+        top: 0;
+        left: 0px;
+    }
     .about .content .column {
         position: relative;
         width: 100%;
