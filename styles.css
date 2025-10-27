@@ -198,17 +198,30 @@ section {
 .about .content .col-left .img-card {
     position: relative;
     width: 100%;
-    min-height: 450px;
+    max-width: 450px; /* limit the circle size on large screens */
+    height: 450px;    /* fixed square so border-radius:50% becomes a circle */
+    overflow: hidden;
+    border-radius: 50%;
+    /* remove aspect-ratio/min-height to avoid conflicts across browsers */
+    margin: 0 auto;
 }
 
 .about .content .col-left .img-card img {
+    /* fill the container and let object-position control the focal point */
     position: absolute;
-    top: 0;
-    left: -59px;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
+    /* requested offset to adjust the crop/focal point */
+    top: 112%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    /* ensure the image always covers the container */
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
     object-fit: cover;
+    /* requested focal point (x% y%) — keeps image positioned the same across sizes */
+    object-position: 44% 112%;
+    border-radius: 50%;
 }
 
 .about .content .col-right .content-title {
@@ -560,10 +573,11 @@ section {
     .about .content {
         flex-direction: column;
     }
+
     .about .content .col-left .img-card img {
         position: absolute;
-        top: 0;
-        left: 0px;
+        top: 114%;
+        left: 42%;
     }
     .about .content .column {
         position: relative;
