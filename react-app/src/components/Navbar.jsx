@@ -46,8 +46,8 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                         {darkMode ? <Sun size={20} className="text-yellow-400" /> : <Moon size={20} className="text-content-muted" />}
                     </button>
                     <a
-                        href="/resume/Vignesh_Resume.pdf"
-                        download
+                        href="/resume/Vignesh_Sivalingam_FE_2026.pdf"
+                        download="Vignesh_Resume.pdf"
                         className="px-6 py-2 bg-accent text-white rounded-full font-semibold hover:bg-accent/80 transition-all transform hover:scale-105"
                     >
                         Resume
