@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+/* 
+  PURE CSS THEME VARIABLES
+  This approach is guaranteed to work regardless of Tailwind internals.
+*/
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  /* slate-50 */
+  --text-primary: #111827;
+  /* gray-900 */
+  --text-secondary: #4b5563;
+  /* gray-600 */
+  --border-color: #e2e8f0;
+  /* slate-200 */
+}
+
+.dark {
+  --bg-primary: #09090b;
+  /* zinc-950 */
+  --bg-secondary: #0f172a;
+  /* slate-900 */
+  --text-primary: #f9fafb;
+  /* gray-50 */
+  --text-secondary: #9ca3af;
+  /* gray-400 */
+  --border-color: #1e293b;
+  /* slate-800 */
+}
+
+@theme {
+  --color-primary: #1a1a1a;
+  --color-secondary: #333333;
+  --color-accent: #00b4d8;
+  --font-poppins: "Poppins", sans-serif;
+
+  /* Custom Functional Colors */
+  --color-canvas: var(--bg-primary);
+  --color-canvas-alt: var(--bg-secondary);
+  --color-content: var(--text-primary);
+  --color-content-muted: var(--text-secondary);
+  --color-border-subtle: var(--border-color);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    @apply font-poppins transition-colors duration-300 m-0 p-0;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-4xl font-bold mb-8 text-center relative text-content;
+  }
+
+  .section-title::after {
+    @apply content-[''] absolute bottom-[-10px] left-1/2 -translate-x-1/2 w-20 h-1 bg-accent rounded;
+  }
+
+  .btn {
+    @apply inline-block px-8 py-3 bg-accent text-white font-semibold rounded-full hover:bg-accent/80 transition duration-300 transform hover:scale-105 shadow-lg;
+  }
+}
