@@ -82,7 +82,7 @@ const Contact = () => {
                         <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
-                                    <label className="text-sm font-medium text-content-muted">Name</label>
+                                    <label className="text-sm font-medium text-content-muted">Your Name</label>
                                     <input
                                         type="text"
                                         name="user_name"
@@ -92,7 +92,7 @@ const Contact = () => {
                                     />
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="text-sm font-medium text-content-muted">Email</label>
+                                    <label className="text-sm font-medium text-content-muted">Your Email</label>
                                     <input
                                         type="email"
                                         name="user_email"
@@ -103,7 +103,7 @@ const Contact = () => {
                                 </div>
                             </div>
                             <div className="space-y-2">
-                                <label className="text-sm font-medium text-content-muted">Message</label>
+                                <label className="text-sm font-medium text-content-muted">Your Message</label>
                                 <textarea
                                     name="message"
                                     required
