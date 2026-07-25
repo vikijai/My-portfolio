@@ -1,0 +1,25 @@
+{
+  "name": "Vignesh S | Portfolio",
+  "short_name": "Vignesh Portfolio",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "description": "Portfolio website of Vignesh S, a Front End Developer.",
+  "icons": [
+    {
+      "src": "/images/portfolio-icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/portfolio-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
