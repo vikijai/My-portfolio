@@ -1,15 +1,15 @@
-const CACHE_NAME = 'portfolio-cache-v4';
+const CACHE_NAME = 'portfolio-cache-v5';
 const APP_SHELL = [
   '/',
   '/index.html',
   '/manifest.json',
-  '/images/portfolio-icon.jpg',
+  '/images/portfolio-icon.png',
   '/images/vignesh-image-1.jpeg',
   '/images/work-CD.png',
   '/images/work-CC.png',
   '/images/work-EC.png',
   '/images/work3.png',
-  '/resume/Vignesh_Sivalingam_FE_2026.pdf',
+  '/resume/vignesh_sivalingam_october_SFE_resume.pdf',
 ];
 
 self.addEventListener('install', (event) => {

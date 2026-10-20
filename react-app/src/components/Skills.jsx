@@ -7,24 +7,31 @@ import {
     SiRedux,
     SiReact,
     SiMysql,
-    SiJenkins
+    SiJenkins,
+    SiGraphql,
+    SiGit,
+    SiNodedotjs
 } from 'react-icons/si';
-import { FaCss3Alt, FaCloud, FaShieldAlt, FaLink } from 'react-icons/fa';
+import { FaAmazon, FaCss3Alt, FaCloud, FaShieldAlt, FaLink } from 'react-icons/fa';
 
 const Skills = () => {
     const skillLines = [
         [
-            { name: 'Javascript', Icon: SiJavascript, percentage: 90, color: 'text-yellow-400' },
+            { name: 'JavaScript', Icon: SiJavascript, percentage: 95, color: 'text-yellow-400' },
             { name: 'HTML', Icon: SiHtml5, percentage: 95, color: 'text-orange-500' },
             { name: 'CSS', Icon: FaCss3Alt, percentage: 90, color: 'text-blue-500' },
             { name: 'TypeScript', Icon: SiTypescript, percentage: 85, color: 'text-blue-600' },
         ],
         [
             { name: 'Redux', Icon: SiRedux, percentage: 80, color: 'text-purple-500' },
-            { name: 'React Toolkit', Icon: SiReact, percentage: 85, color: 'text-cyan-400' },
+            { name: 'React.js', Icon: SiReact, percentage: 90, color: 'text-cyan-400' },
             { name: 'SonarQube', Icon: FaShieldAlt, percentage: 75, color: 'text-emerald-500' },
         ],
         [
+            { name: 'GraphQL', Icon: SiGraphql, percentage: 70, color: 'text-pink-500' },
+            { name: 'Git', Icon: SiGit, percentage: 90, color: 'text-orange-600' },
+            { name: 'AWS', Icon: FaAmazon, percentage: 50, color: 'text-orange-400' },
+            { name: 'Node.js', Icon: SiNodedotjs, percentage: 60, color: 'text-green-600' },
             { name: 'Azure', Icon: FaCloud, percentage: 70, color: 'text-blue-400' },
             { name: 'MySQL', Icon: SiMysql, percentage: 80, color: 'text-blue-500' },
             { name: 'Jenkins', Icon: SiJenkins, percentage: 75, color: 'text-red-500' },

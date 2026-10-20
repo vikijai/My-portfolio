@@ -16,6 +16,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
     const navLinks = [
         { name: 'Home', href: '#home' },
         { name: 'About', href: '#about' },
+        { name: 'Experience', href: '#experience' },
         { name: 'Skills', href: '#skills' },
         { name: 'Work', href: '#work' },
         { name: 'Contact', href: '#contact' },
@@ -46,7 +47,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                         {darkMode ? <Sun size={20} className="text-yellow-400" /> : <Moon size={20} className="text-content-muted" />}
                     </button>
                     <a
-                        href="/resume/Vignesh_Sivalingam_FE_2026.pdf"
+                        href="/resume/vignesh_sivalingam_october_SFE_resume.pdf"
                         download="Vignesh_Resume.pdf"
                         className="px-6 py-2 bg-accent text-white rounded-full font-semibold hover:bg-accent/80 transition-all transform hover:scale-105"
                     >
@@ -85,7 +86,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                         </a>
                     ))}
                     <a
-                        href="/resume/Vignesh_Sivalingam_FE_2026.pdf"
+                        href="/resume/vignesh_sivalingam_october_SFE_resume.pdf"
                         download
                         onClick={() => setIsOpen(false)}
                         className="px-8 py-3 bg-accent text-white rounded-full font-bold shadow-lg hover:bg-accent/90 transition-all"
